@@ -91,6 +91,7 @@ if is_model_registered("catalogue", "Product"):
             index.SearchField("upc", boost=3, es_extra={"analyzer": "keyword"}),
             index.SearchField("description", partial_match=True),
             index.FilterField("popularity"),
+            index.FilterField("is_public"),
             index.FilterField("price", es_extra={"type": "double"}),
             index.FilterField("category_id"),
             index.SearchField("category_name", partial_match=True),
