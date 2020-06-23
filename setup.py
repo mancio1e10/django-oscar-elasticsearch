@@ -26,9 +26,11 @@ setup(
     # specify dependencies
     install_requires=[
         'setuptools',
-        'django-oscar<2.0',
+        # the current version used on proj
+        'django-oscar==2.0.4',
         'wagtail',
         "purl",
+        # Elasticsearch 6.x
         "elasticsearch>=6.0.0,<7.0.0",
         "uwsgidecorators-fallback",
     ],
