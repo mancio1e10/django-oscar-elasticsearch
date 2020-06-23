@@ -1,1 +1,1 @@
-default_app_config = "oscar_elasticsearch.search.config.SearchConfig"
+default_app_config = "oscar_elasticsearch.search.apps.SearchConfig"
